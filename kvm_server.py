@@ -116,6 +116,8 @@ def start_server(host, port=65432):
             s.connect((host, port))
             print(f"Connected to {host}:{port}")
             client_socket = s
+            # Enable TCP keep-alives
+            client_socket.setsockopt(socket.SOL_SOCKET, socket.SO_KEEPALIVE, 1)
             print("--- Server running. Press F12 to toggle KEYBOARD control. ---")
             while client_socket:
                 time.sleep(1)
