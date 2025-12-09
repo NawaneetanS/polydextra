@@ -1,5 +1,4 @@
-# KVM (Keyboard, Video, Mouse) - Keyboard Sharing
-## Project Name: Polydextra
+# Polydextra - A KVM Project
 
 This project provides a simple solution for sharing keyboard input between two Linux machines over a network. One machine acts as the "server," capturing local keyboard input, while the other acts as the "client," receiving these inputs and simulating them using a virtual keyboard device.
 
